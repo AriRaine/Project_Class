@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="stylesheet" href="styl.css">
+   <link rel="stylesheet" href="produtosstyle.css">
+   <title>Calculadoras</title>
+</head>
+<body>
+   <header>
+      <nav class="nave">
+         <a href="Produtos.html" class="logo">Calculatron 2000</a>
+         <ul class="sla">
+            <li class="op"><a href="index1.html">Sair</a></li>
+            <li class="op"><a href="calculadora.html">Especial</a></li>
+            <li class="op"><a href="Produtos.html">Produtos</a></li>
+         </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="produtos">
+        <div class="produto">
+          <img src="imagens/calculadoradoneymar.png">
+          <p onclick="aparecer1()">Neymar Calc <br> R$ 200,00</p>
+        </div>
+        <div class="produto">
+          <img src="imagens/calculadoradobts.png">
+          <p onclick="aparecer2()">BTS Calculator <br> ₩ 52972,95 </p>
+        </div>
+        <div class="produto" id="gamer">
+          <img src="imagens/calculadoragamer.png">
+          <p onclick="aparecer3()">Calculadora Gamer <br> $ 40,72 </p>
+        </div>
+      </section>
+
+      <div class="page-title">Seu Carrinho</div>
+        <div class="content">
+          <section>
+            <table>
+              <thead>
+                <tr>
+                  <th>Produto</th>
+                  <th>Preço</th>
+                  <th>Quantidade</th>
+                  <th>Total</th>
+                  <th>-</th>
+                </tr>
+              </thead>
+              <!-- Parte do NEYMAR -->
+              <tbody id="prod1">
+                <tr>
+                  <td>
+                    <div class="product">
+                      <img src="https://picsum.photos/100/120" alt=""/>
+                      <div class="info">
+                        <div class="name">Nome do produto</div>
+                        <div class="category">Neymar Calc</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td id="valorFixoNeymar">200.00</td>
+                  <td>
+                    <div class="qty">
+                      <button onclick="menos1()"><i class="bx bx-minus"></i></button>
+                      <span id="qntNeymar"> 1 </span>
+                      <button onclick="mais1()"><i class="bx bx-plus"></i></button>
+                    </div>
+                  </td>
+                  <td id="valorNeymarTotal"> 0 </td>
+                  <td>
+                    <button class="remove" onclick="sumir1()"><i class="bx bx-x"></i></button>
+                  </td>
+                </tr>
+              </tbody>
+              <!-- PARTE BTS -->
+              <tbody id="prod2" >
+                <tr>
+                  <td>
+                    <div class="product">
+                      <img src="https://picsum.photos/100/120" alt="" />
+                      <div class="info">
+                        <div class="name">Nome do produto</div>
+                        <div class="category">BTS</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td id="valorFixoBTS">52972.95</td>
+                  <td>
+                    <div class="qty">
+                      <button onclick="menos2()"><i class="bx bx-minus"></i></button>
+                      <span id="qntBTS"> 1 </span>
+                      <button onclick="mais2()"><i class="bx bx-plus"></i></button>
+                    </div>
+                  </td>
+                  <td id="valorBTSTotal"> 0 </td>
+                  <td>
+                    <button class="remove" onclick="sumir2()"><i class="bx bx-x"></i></button>
+                  </td>
+                </tr>
+              </tbody>
+              <!-- PARTE GAMER -->
+              <tbody id="prod3">
+                <tr>
+                  <td>
+                    <div class="product">
+                      <img src="https://picsum.photos/100/120" alt="" />
+                      <div class="info">
+                        <div class="name">Nome do produto</div>
+                        <div class="category">Gamer</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td id="valorFixoGamer">40.72</td>
+                  <td>
+                    <div class="qty">
+                      <button onclick="menos3()"><i class="bx bx-minus"></i></button>
+                      <span id="qntGamer"> 1 </span>
+                      <button onclick="mais3()"><i class="bx bx-plus"></i></button>
+                    </div>
+                  </td>
+                  <td id="valorGamerTotal"> 0 </td>
+                  <td>
+                    <button class="remove" onclick="sumir3()"><i class="bx bx-x"></i></button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <aside>
+            <div class="box">
+              <header>Resumo da compra</header>
+              <div class="info">
+                <div><span>Sub-total </span><span id="subtotal">---</span></div>
+                <div><span>Frete</span><span>Gratuito</span></div>
+              </div>
+              <footer>
+                <span>Total</span>
+                <span id="valordacompra">00.00</span>
+              </footer>
+            </div>
+            <button onclick="finalizar()">Finalizar Compra</button>
+          </aside>
+        </div>
+    </main>
+
+    <script src="tes.js"></script>
+</body>
+</html>

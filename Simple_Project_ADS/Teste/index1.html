@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styleindex.css">
+   <title>Larissa e Marlon</title>
+</head>
+<body>
+   <!-- web sql / sql lite -->
+   <!-- cinza- 8895b3 azul- 0b3142 -->
+   <header>
+      <nav>
+         <input type="checkbox" id="check">
+         <label for="check" class="checkbtn">
+            <p onclick="cadastro()" id="us"> Logar </p>
+         </label>
+         <label class="logo" id="refresh">Calculatron 2000</label>
+      </nav>
+    </header>
+    <!-- login -->
+    <main>
+      <section class="inicio">
+         <div class="inicioText">
+            <h4 class="textH4"> Bem Vindo ao Calculatron 2000</h4>
+            <h1 class="textH1">As melhores calculadoras, você encontra aqui!</h1>
+            <p id="pisca">Faça seu cadastro e aproveite nossos produtos!</p>
+         </div>
+         <div class="inicioImg">
+            <img src="./imagens/bixin.png" alt="bixin">
+         </div>
+      </section>
+    </main>
+    <!-- Area de acesso do Login -->
+    <div id="loginarea">
+       <aside class="body1">
+         <div class="texto-esquerda">
+             <h1> Faça Login <br> E aproveite sua calculadora! </h1>
+             <img src="/Teste/imagens/mascote.png" class="mascote-calculator" alt="mascote">
+         </div>
+         <form >
+             <div class="tela-login">
+                 <h1>Login</h1>
+                 <br>
+                 <input required type="text" id="log" placeholder="Usuário" class="conteudo">
+                 <br><br>
+                 <input required type="password" id="sen" placeholder="Senha" class="conteudo">
+                 <br><br>
+                 <button class="botaozin" onclick="entrar(), sumir()">Entrar</button>
+                 <br><br>
+                 <button class="botaozin" id="cad" onclick="salvar(),registrado()">Cadastrar</button>
+             </div>
+         </form>
+         </aside>
+    </div>
+    
+   <script src="script1.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+
+* 
+.produto { margin-bottom: 20px; cursor: pointer; }
+.produto p {
+    background-color: #4B45ED;
+    font-size: 30px;
+    text-align: center;
+    color: whitesmoke;
+    padding: 5px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 3px 3px 25px rgba(0, 0, 0, 0.637);
+}
+.produto p:hover {
+    transform: rotate(-2deg);    
+}
+
+.produto img{
+    width: 500px;
+    
+}
+
+#gamer > img{
+    margin: 102px 0px 88px 0px;
+}
+
+#produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

@@ -1,0 +1,201 @@
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: montserrat;
+}
+nav {
+	background: #5434af;
+	height: 80px;
+	width: 100%;
+}
+label.logo {
+	color: white;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+   cursor: pointer;
+}
+nav ul {
+	float: right;
+	margin-right: 20px;
+}
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+nav ul li a {
+	color: white;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+a.active, a:hover {
+	background: #1d075f;
+	transition: .5s;
+}
+.checkbtn {
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check {
+	display: none;
+}
+	.checkbtn {
+		display: block;
+	}
+	ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #1d075f;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+	nav ul li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav ul li a {
+		font-size: 20px;
+	}
+	a:hover, a.active {
+		background: none;
+		color: #5434af;
+	}
+	
+   body{
+      background-color: rgb(255, 255, 247);
+   }
+
+/*TELA DE LOGIN!*/   
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+.body1{
+   font-family: 'Noto Sans', sans-serif;
+   background-image: linear-gradient(180deg,#4992e0,#4d00e7);
+   font-size: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 80px;
+	transition: all .5s;
+   left: -100%;
+}
+
+
+.texto-esquerda{
+    width: 50vw;
+    height: 45vw;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.texto-esquerda > h1{
+    font-size: 40px;
+	 color: white;
+}
+
+.mascote-calculator{
+    width: 30vw;
+}
+
+.tela-login{
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 50px;
+    border-radius: 15px;
+}
+
+.tela-login > h1{
+    color: white;
+    text-align: center;
+    font-weight: 500;
+}
+
+.conteudo{
+    width: 21vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+/* Bottom */
+.botaozin{
+    color: white;
+    background-image: linear-gradient(45deg,#306BAC,#4B45ED);
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 22px;
+}
+
+/* Ação do Botao */
+.botaozin:hover{
+    background-image: linear-gradient(45deg,#2EC4B6, #2EC4B6);
+    cursor: pointer;
+}
+
+/*INICIO*/
+
+.inicio{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 10%;
+	margin-top: 60px;
+}
+
+.inicioText{
+	max-width: 37rem;
+	margin-left: 5%;
+}
+
+.inicioText .textH4{
+	font-size: 4em;
+	color: #1d075f;
+	margin-bottom: 10px;
+}
+
+.inicioText .textH1{
+	font-size: 40px;
+	margin-bottom: 20px;
+	line-height: 3rem;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.inicioText p{
+	font-size: 50px;
+}
